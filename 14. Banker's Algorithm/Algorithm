@@ -1,0 +1,26 @@
+This algorithm was suggested by Dijkstar, the name banker is used here to indicate 
+that it uses a banker’s activity for providing loans and receiving payment against
+the given loan. This algorithm places very few restrictions on the processes 
+competing for resources. Every request for the resource made by a process is 
+thoroughly analyzed to check, whether it may lead to a deadlock situation. If 
+the result is yes then the process is blocked on this request. At some future 
+time, its request is considered once again for resource allocation. So this 
+indicated that, the processes are free to request for the allocation, as well 
+as de-allocation of resources without any constraints. So this generally reduces
+the idling of resources.
+Suppose there are (P) number of Processes and (r ) number of resources then 
+its time complexity is proportional to P x r2
+At any given stage the OS imposes certain constraints on any process trying
+to use the resource. At a given moment during the operation of the system, 
+processes P, would have been allocated some resources. Let these allocations 
+total up to S.
+Let (K=r-1) be the number of remaining resources available with the system. 
+Then k>=0 is true, when allocation is considered.
+Let maxk be the maximum resource requirement of a given process Pi.
+Actk be the actual resource allocation to Pi at any given moment.
+Then we have the following condition.
+Maxk<=p for all k and
+To
+Disadvantages of Banker’s algorithm:
+1. The maximum number of resources needed by the processes must be known in advance
+2. The no of processes should be fixed.

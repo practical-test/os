@@ -1,0 +1,6 @@
+1. echo - The 'echo' command helps us move some data, usually text into file
+2. read - The 'read' command is used to read the contents of a line into a variable
+3. if - The 'if' command is used to execute command based on the condition
+4. elif - The 'elif' command is used to execute command if the 'if' command fails and 'elif' command passes
+5. else - The 'else' command is used to execute if both the 'if' and 'elif' condition fails
+6. fi - The 'fi' command is the fundamental control statement that allows shell to make decisions and execute statements

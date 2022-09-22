@@ -1,0 +1,6 @@
+1) To select a substring from string using ${string: starting position :root position}
+2) Comparing two strings is done by {$s1=$s2}
+3) To check for zero length string use [-z String]
+4) To check for empty string use [String]
+5) To check for non zero length string use –n as [-n $string]
+6) The length of string is obtained by ${#string}

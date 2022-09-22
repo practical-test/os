@@ -1,0 +1,16 @@
+1. Initialize the state array S as 0, Si =0 if the philosopher i is thinking or 1 if hungry.
+2. Associate two functions getfork(i) and putfork(i) for each philosopher i.
+3. For each philosopher I call getfork(i) , test(i) and putfork(i) if i is 0
+4. Stop
+
+Algorithm for getfork(i):
+Step 1: set S[i]= 1 i.e. the philosopher i is hungry
+Step 2: call test(i)
+
+Algorithm for putfork(i)
+Step 1: set S[i]=0 I.e. the philosopher i is thinking
+Step 2: test(LEFT) and test(RIGHT)
+
+Algorithm for test(i)
+Step 1: check if (state[i]==HUNGRY && state[LEFT]!=EATING && state[RIGHT]!=EATING)
+Step 2: give the i philosopher a chance to eat.

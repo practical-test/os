@@ -1,0 +1,22 @@
+PROGRAM:-
+
+echo “hello,$LOGNAME”
+
+echo “user is,’whoi am’”
+
+echo “date is,’date’”
+
+echo “current directory,$(pwd)”
+
+
+
+
+OUTPUT:-
+
+hello,admin
+
+user is ,cse pts/12 2017-02-16 13:48(scse008.mobilelab.com)
+
+date is, 2017-02-16 13:48
+
+Current directory,/home/cse

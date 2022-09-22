@@ -1,0 +1,60 @@
+Aim:
+	To understand and practice the basic linux commands.
+  
+Commands: 
+pwd – Present Working Directory
+ls – List
+i	-	left of cursor
+I 	-	Beginning of the line
+a 	-	append text to the right of the cursor 
+A 	-	append text to the end of the line
+o	-	open the line below
+O	-	open the line above
+S	-	Replace single character
+R	-	replace from the cursor to right
+cd – Change Directory
+mkdir- Create a folder or a directory
+rmdir – remove a directory
+rm – r  ->  It removes both  the files and folders available in the directory
+touch – used to create a file
+man / help– to know more about the command and how to use it
+cp – copy files through the command line. It takes two arguments: The first is the location 
+of the file to be copied, the second is where to copy.
+mv —to move files through the command line.
+locate — The locate command is used to locate a file in a Linux system, just like the search 
+command in Windows. 
+echo — The "echo" command helps us move some data, usually text into a file. For example, if 
+you want to create a new text file or add to an already made text file, you just need to type 
+in, “echo hello, my name is alok >> new.txt”
+cat — Use the cat command to display the contents of a file.
+sudo — A widely used command in the Linux command line, sudo stands for "SuperUser Do". So, 
+if you want any command to be done with administrative or root privileges, you can use the 
+sudo command. 
+df — Use the df command to see the available disk space in each of the partitions in your system.
+du — Use du to know the disk usage of a file in your system.
+tar — Use tar to work with tarballs (or files compressed in a tarball archive) in the 
+Linux command line.
+uname — Use uname to show the information about the system your Linux distro is running. 
+Using the command “uname -a” prints most of the information about the system. 
+uname  –a	-	behaves as through all of the option
+uname  –v	-	Print Operating System version
+uname  –m	-	Print Machine hardware name
+uname  –n	-	Print node name
+uname  –p	-	Print Machine Processor Architecture name
+uname  –r	-	print opearating system release
+uname  –s	-	print operating system name
+
+apt-get — Use apt to work with packages in the Linux command line. Use apt-get to install 
+packages. This requires root privileges, so use the sudo command with it.
+chmod — Use chmod to make a file executable and to change the permissions granted to 
+it in Linux. 
+hostname — Use hostname to know your name in your host or network. Basically, it displays 
+your hostname and IP address. 
+ping — Use ping to check your connection to a server. 
+Saving and exit (In Editor):
+:w	-	save a file
+:wq	-	Save and quit editing mode
+:q	-	Quit editing when no changes are done
+
+Result:
+	Thus, the basic linux commands have been practiced successfully.

@@ -1,0 +1,26 @@
+Description
+  Shell is a user program or it's environment provided for user interaction.
+  Shell is a command language interpreter that executes commands read from the standard input
+  device(keyboard) or from a file.
+  Shell is not a part of system kernal, but uses the system kernal to execute programs, 
+  create files etc.
+  
+Variables in shell:
+ In linux(shell), there are 2 types of variables,
+ 1) System variables - Created and maintained by linux itself. 
+ This type of variable is defined in CAPITAL LETTERS
+ 2) User defined variables - Created and maintained by user.
+ This type of variable is defined in lower letters
+ 
+Opening a VI editor:
+ Syntax:
+  vi filename.sh
+  
+[Have to press Esc + Shift + ;]
+  
+Saving and exit(In editor):
+    :w - save a file
+    :wq - save and quit editting mode
+    :q - quit editting when no changes are done
+   
+Execution Filename.sh

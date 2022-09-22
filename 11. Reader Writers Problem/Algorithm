@@ -1,0 +1,40 @@
+Start ;
+/* Initialize semaphore variables*/
+integer mutex=1; // Controls access to RC
+integer DB=1; // controls access to data base
+integer RC=0; // Number of process reading the database currently
+
+1.Reader( ) // The algorithm for readers process
+Repeat continuously
+DOWN(mutex); // Lock the counter RC
+RC=RC+1; // one more reader
+If(RC=1)DOWN(DB); // This is the first reader.Lock the database for reading
+UP(mutex); // Release exclusive access to RC
+Read database(); // Read the database
+DOWN(mutex); // Lock the counter RC
+RC=RC-1; // Reader count less by one now
+If(RC=0)UP(DB); // This is the last reader .Unlock the database.
+UP(mutex); // Release exclusive access to RC
+End
+
+2.Writer( ) // The algorithm for Writers process
+Reepeat continuously
+DOWN(DB); // Lock the database
+Write_Database(); // Read the database
+UP(DB); // Release exclusive access to the database
+End
+
+
+Step a: initialize two semaphore mutex=1 and db=1 and rc,(Mutex controls the access to read count rc)
+Step b: create two threads one as Reader() another as Writer()
+Reader Process:
+Step 1: Get exclusive access to rc(lock Mutex)
+Step 2: Increment rc by 1
+Step 3: Get the exclusive access bd(lock bd)
+Step 4: Release exclusive access to rc(unlock Mutex)
+Step 5: Release exclusive access to rc(unlock Mutex)
+Step 6: Read the data from database 
+Step 7: Get the exclusive access to rc(lock mutex)
+Step 8: Decrement rc by 1, if rc =0 this is the last reader.
+Step 9: Release exclusive access to database(unlock mutex)
+Step 10: Release exclusive access to rc(unlock mutex)
