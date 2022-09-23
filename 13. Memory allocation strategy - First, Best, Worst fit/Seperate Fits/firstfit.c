@@ -4,6 +4,7 @@
 int main() {
     int p[20], f[20], min, minindex, n, i, j, c, f1[20], 
     k = 0, h = 0, flag, t = 0, n1;
+    printf("\n\n-----FIRST FIT-----\n\n");
     printf("\nEnter the number of memory partitions : ");
     scanf("%d", & n);
     printf("\nEnter the number of process : ");
