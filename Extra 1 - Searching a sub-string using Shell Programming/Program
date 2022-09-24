@@ -1,36 +1,32 @@
-S1=”this is a text”
-S2=${s1:6:6}
-echo $2
-a=”good”
-b=”bad”
-if[$a=$b]
+echo Enter main string:
+read main
+l1=`echo $main | wc -c`
+l1=`expr $l1 - 1`
+echo Enter sub string:
+read sub
+l2=`echo $sub | wc -c`
+l2=`expr $l2 - 1`
+n=1
+m=1
+pos=0
+while [ $n -le $l1 ]
+do
+a=`echo $main | cut -c $n`
+b=`echo $sub | cut -c $m`
+if [ $a = $b ]
 then
-echo “a is equal to b”
-else
-echo “a is not equal to b”
+n=`expr $n + 1`
+m=`expr $m + 1`
+pos=`expr $n - $l2`
+r=`expr $m - 1`
+if [ $r -eq $l2 ]
+then
+break
 fi
-a=” ”
-if[-z $a]
-then
-echo “string length is zero”
 else
-echo “string length is non zero”
+pos=0
+m=1
+n=`expr $n + 1`
 fi
-if[$a]
-then
-echo “string is not empty”
-else
-echo “string is empty”
-fi
-if[-n $a]
-then
-echo “string is not zero” else
-echo “string length is zero”
-fiif[$a!=$b]
-then
-echo “a is not equal to b”
-else
-echo “a is equal to b”
-fi
-s=”sample string”
-echo ${#s}
+done
+echo Position of sub stringin main string is $pos
